@@ -1,0 +1,19 @@
+clc
+
+syms t
+
+v=170*sin(100*pi*t)
+ 
+i=v/10
+
+p = v*i
+
+
+x = 0:0.0001:0.1;
+plot(x,subs(p,x))
+grid on
+axis auto
+
+% pt = subs(p)
+
+% plot(t,(2890*sin(100*pi*t)*sin(100*pi*t)))
